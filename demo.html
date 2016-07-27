@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Becker Thai Editor Demo</title>
+		<meta charset="utf-8"/>
+		<link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-5fc7c6e8cf4372103a3e557a9fd70de7ffb44c643a350ece5b400060b64141e7.css" integrity="sha256-X8fG6M9DchA6PlV6n9cN5/+0TGQ6NQ7OW0AAYLZBQec=" media="all" rel="stylesheet" />
+	</head>
+	<body style="margin:20px;">
+		<h2>Becker Thai Editor Demo</h2>
+		<textarea id="editor" rows="10" cols="120"></textarea>
+		<div class="markdown-body">
+			<div style="float: left; width: 400px; padding-right:20px;">
+				<h3>Vowels</h3>
+				<p>To type non-ascii vowels, use the following:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Hotkey *</th>
+							<th align="center">Replacement</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ctrl + a</td>
+							<td align="center">ə</td>
+						</tr>
+						<tr>
+							<td>ctrl + o</td>
+							<td align="center">ɔ</td>
+						</tr>
+						<tr>
+							<td>ctrl + e</td>
+							<td align="center">ɛ</td>
+						</tr>
+						<tr>
+							<td>ctrl + u</td>
+							<td align="center">ʉ</td>
+						</tr>
+					</tbody>
+				</table>
+				<div>* IE users will need to press ctrl + alt + vowel to trigger the substitution.</div>
+			</div>
+			<div style="float: left; width: 400px;">
+				<h3>Tones</h3>
+				<p>To type the tones, first press the key listed below, then the vowel.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Key</th>
+							<th align="center">Tone</th>
+							<th>Example</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>`</td>
+							<td align="center">low</td>
+							<td>'a becomes à</td>
+						</tr>
+						<tr>
+							<td>'</td>
+							<td align="center">high</td>
+							<td>'a becomes á</td>
+						</tr>
+						<tr>
+							<td>^</td>
+							<td align="center">rising</td>
+							<td>^a becomes â</td>
+						</tr>
+						<tr>
+							<td>&lt;</td>
+							<td align="center">falling</td>
+							<td>&lt;a becomes ǎ</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/shim.min.js"></script>
+		<script src="./js/BeckerThaiEditor.js"></script>
+		<script>
+		$().ready( function(){
+			$("#editor").beckerThaiEditor();
+		});	
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "becker-thai-editor",
+  "version": "0.0.1",
+  "description": "jQuery plugin to enhance textareas, making it easier to type Thai using the Becker transcription system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fgurtler/becker-thai-editor.git"
+  },
+  "keywords": [
+    "ecosystem:jquery",
+    "jquery-plugin",
+    "Thai",
+    "Becker"
+  ],
+  "author": "Friedrich Gurtler <fgurtler@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fgurtler/becker-thai-editor/issues"
+  },
+  "homepage": "https://github.com/fgurtler/becker-thai-editor#readme"
+}
